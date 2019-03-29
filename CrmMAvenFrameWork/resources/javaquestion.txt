@@ -1,0 +1,157 @@
+1. what is class & object
+2. explain class & object for AC & CAR object
+3. what is constructor ,what is real use of constructor
+4. waht is constructor overloading & constructor chaining
+5. what is the use of this & super keyword
+6. what is the use of this() & super() statment
+7. what is in inheritance & advantages of inheritance
+8. expain type of inheritance
+9. explain multiple inheritance & why it is not possible, how to      achive multiple inheritance
+10.what is death of daimond
+11.explain overLoading / overRiding with real time example
+12.what is abstraction & abstract
+13.how many ways we can acheive abstraction
+14.Can we have constructor in abstract class?
+15.Can we have main method in abstract class?
+16.can interface inherit object class?
+17.Can abstract class inherit object class?
+18.which is the first statement inside the default constructor?
+19.Can interface have a construtor?
+20.Can interface have a main method?
+21.Can we achieve multiple inheritance by using a abstract class?
+22.Can we achieve multiple inheritance by using a interface?
+23.Can we achieve loose coupling by using abstract class and     interface?
+24.Can we have a private abstract method in abstract class?
+25.Can we have a static variables inside the interface?
+25.how do you achieve multiple inheritance in java by using interface?
+26.Explain the interface with real time example?
+26.What is exception?
+27.Diffrence betweem exception and error?
+28.Explain the types of exception?
+29.what is the purpose of try and catch block?
+30.can we have a nested try blocks?
+31.can we have a more than one finally block in a single program?
+32.what is the diffrence between throw and throws and throwable?
+33.what are custom exception?How to write custom excpetion?
+35.which is supermost class of exception?
+36.what are the inbuilt class present in java?
+37.what are the inbuilt methods are present in java?
+38.what is the diffrence between final,finally,finalize?
+39.List out the exceptions are available in java?
+40.Difference between array and collection?
+41.difference between array and arraylist?
+42.difference between array and linkedlist?
+43.difference between arraylist and linkedlist?
+44.difference between arraylist and vector?
+45.difference between list and set?
+46.difference between set and map?
+47.difference between hashset and linkedhashset?
+48.difference between treeset and treemap?
+49.difference between comparable and comparator?
+50.how many cursors are available in java?
+51.how arraylist is implemented?
+52.what is the default size of arraylist?
+53.difference between collection and collections?
+54.what is the role of iterator in collection framework?
+55.difference between hashmap and hashtable?
+56. what is early binding and late binding?
+56.what is wrapper class, List of the Wrapper class avilable in Java
+57.What is boxing & unboxing 
+58.how to integer to String
+59.how to Stringto Intiger
+60.what is premetive casting, types of premetive casting
+61.what of object casting expalin with example
+62.Explain Run time ploymorphism with upcasting example
+63.what is acheive down casting in java
+64.What is classCASTING exception & when will get ?
+65.what is Object class in Java
+66.explain inbuilt class avilable in OBJECT class
+67.can we create object array? what is the use of Object array
+68.explain toString(). eqaul(), hashcode() mtd in Object class
+69. What is String class , why is required
+70. can we create object to final String class
+71. how many ways to create String object
+72. why String is immutable , explain with program
+73. difference between Constant pool & non constant pool in String class
+74. differce between equals() and == and compareTo() method in java?
+75. Difference between equals() and contains() method?
+76.Diffrence between stringbuffer and stringbuilder?
+77.Explain the inbuilt methods of String class?
+78.Explain public sttaic void main(String[] args)?
+79.Explain system.out.println()?
+80.Does arrays are objects in java?
+81.What is two dimensional array?
+82.What is jagged array?
+83.Can we declare array as a final?
+84.What is marker interafce?
+85.what is serialization?
+86.what is deserialisation?
+87.which class do we need to use for a serialisation?
+88.what are nested class?
+89.Can we change the sequence of public static in main method?
+90.what are commandline arguments?
+91.what are threads?how many ways to create a thread?
+92.what is synchronisation?
+93.what is singleton class?
+94.why singleton class is required?explain with real time example?
+95.How to declare ,create, and initialise array in single line?
+96.what are  the disadvantages of array?
+97.which is the default package in java?
+98.what is the use of package?
+99.what is the use of import keyword?
+100.what are inbuilt packages are available in java?
+101.Explain oops concepts with real time examples?
+102. diff b/n static and non-static.
+
+Programs
+1.W.A.P PALINDROME?
+2.w.a.p for reverse number?
+3.armstrong number?
+4.prime number or not?
+5.w.a.p to generate prime numbers between 1 to 1000?
+6.w.a.p strong number?
+7.perfect number?
+8.summation of odd and even numbers?
+9.fibonacci?
+10.factorial?
+11.sum of digits?
+12.Sum of 'n' natural numbers?
+13.bubblesort?
+14.w.ap. to display 1 to 100 without using any loop?
+15.Can a method return more than one value?if not how to return?
+16.sum of array elements?
+17.binary search?
+18.addition of two matrix?
+19.transpose matrix?
+20.contigious array?
+21.w.a.p to find biggest and least elemet is present in the array?
+22.w.a.p to reverse an integer array and display?
+23.w.a.p to find duplicate elemenst in array?
+25.reverese string?
+26.reverse sentence?
+27.palindrome in string?
+28.w.a.p to find length of the string without using length fuction?
+29.w.a.p to count number of vowels,space and digits present in the array?
+30.w.a.p to find repeated characters are present instring?
+31.w.a.p to find non-repeated characters in String?
+32.anagram?
+33.w.a.p tp remove the space which is present in the sentence?
+34.w.a.p to find  to count the number of words present in the text file?
+35.w.a.p to count commented line number available in textfile?
+36.All pattern programs?
+37.w.a.p to find out whether the year is leap or not?
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  

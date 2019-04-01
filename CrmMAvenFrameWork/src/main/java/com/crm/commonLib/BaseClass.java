@@ -7,7 +7,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -42,6 +44,10 @@ public void configBc() throws Throwable, InvalidFormatException, org.apache.poi.
 	String browser = eLib.getPropertyFileData("browser");
 	String url = eLib.getPropertyFileData("url");
 	if(browser.equals("firefox")){
+			/*
+			 * FirefoxProfile profile = new FirefoxProfile(); FirefoxBinary bin = new
+			 * FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe"));
+			 */
 	   driver = new FirefoxDriver();
 	}else if(browser.equals("chrome")){
 		//System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");

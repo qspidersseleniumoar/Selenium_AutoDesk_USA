@@ -13,9 +13,9 @@ import com.crm.objectRepository.CreateNewCamp;
 import com.crm.objectRepository.Home;
  
 @Listeners(com.crm.commonLib.SampleList.class)
-    public class CampTest {
+ 
 
-		public class campaignTest extends BaseClass {
+		public class CampTest extends BaseClass {
 			 
 			@Test 
 			public void createcampTest() throws Throwable{
@@ -42,4 +42,4 @@ import com.crm.objectRepository.Home;
 			
 			}
 	
-}
+

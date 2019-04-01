@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,7 +20,7 @@ import com.crm.objectRepository.Home;
 import com.crm.objectRepository.Login;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.sun.media.sound.InvalidFormatException;
+
 
 public class BaseClass {
 	FileLib eLib = new FileLib();
@@ -44,10 +44,11 @@ public void configBc() throws Throwable, InvalidFormatException, org.apache.poi.
 	if(browser.equals("firefox")){
 	   driver = new FirefoxDriver();
 	}else if(browser.equals("chrome")){
-		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}
+	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	driver.get(url);
 }

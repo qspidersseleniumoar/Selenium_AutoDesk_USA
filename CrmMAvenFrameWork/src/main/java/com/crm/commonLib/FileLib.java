@@ -7,13 +7,16 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import com.sun.media.sound.InvalidFormatException;
+
+
+
 
 public class FileLib {
 	
@@ -28,8 +31,7 @@ public class FileLib {
 		pObj.load(fis);
 		return pObj.getProperty(key);
 	}
-	public String getExcelData(String sheetNAme, int rowNum, int colNum) 
-			throws EncryptedDocumentException, InvalidFormatException, IOException, org.apache.poi.openxml4j.exceptions.InvalidFormatException{
+	public String getExcelData(String sheetNAme, int rowNum, int colNum) throws Throwable{
 		FileInputStream fis = new FileInputStream(filePath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetNAme);
@@ -39,8 +41,7 @@ public class FileLib {
 		return data;
 	}
 	
-	public void setExcelData(String sheetNAme, int rowNum, int colNum,String data) 
-			throws EncryptedDocumentException, InvalidFormatException, IOException, org.apache.poi.openxml4j.exceptions.InvalidFormatException{
+	public void setExcelData(String sheetNAme, int rowNum, int colNum,String data) throws Throwable,InvalidFormatException{
 		FileInputStream fis = new FileInputStream(filePath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetNAme);
@@ -52,7 +53,7 @@ public class FileLib {
 	    wb.close();
 		
 	}
-	public int getRowCount(String sheetNAme) throws EncryptedDocumentException, InvalidFormatException, IOException, org.apache.poi.openxml4j.exceptions.InvalidFormatException{
+	public int getRowCount(String sheetNAme) throws Throwable{
 		FileInputStream fis = new FileInputStream(filePath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetNAme);

@@ -63,7 +63,7 @@ public class WebDriverCoominLib extends BaseClass{
 	}
 	
 	public void waitAndClick(WebElement element) {
-		int count =20;
+		int count =0;
 		while (count<20) {
 			try {
 				element.click();
@@ -72,6 +72,7 @@ public class WebDriverCoominLib extends BaseClass{
 				
 				try {
 					Thread.sleep(1000);
+					count++;
 				} catch (InterruptedException e1) {
 					
 				}

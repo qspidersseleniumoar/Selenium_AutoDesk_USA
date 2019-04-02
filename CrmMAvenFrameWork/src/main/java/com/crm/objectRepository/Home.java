@@ -60,7 +60,9 @@ public class Home extends WebDriverCoominLib{
 	WebElement CRM_Settings;
 	@FindBy(xpath="//img[@src='themes/softed/images/mainSettings.PNG']")
 	WebElement setting_img;
-	
+	@FindBy(name="Purchase Order")
+	WebElement purchaseOrder;
+
 	
 	public void navigateTohome(){
 		waitAndClick(home);
@@ -148,4 +150,12 @@ public class Home extends WebDriverCoominLib{
 		mouseMovement(setting_img);
 		waitAndClick(CRM_Settings);
 		}
+	
+	public void navigateToPurchaseOrder(){
+
+		mouseMovement(More);
+			waitAndClick(purchaseOrder);
+
+	} 
+
 	 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.campaignTest.CampTest$campaignTest">
+      <class name="com.crm.campaignTest.CampTest">
         <methods>
           <include name="configbeforeSuite"/>
-          <include name="configBc"/>
           <include name="createcampTest"/>
+          <include name="configBc"/>
         </methods>
-      </class> <!-- com.crm.campaignTest.CampTest$campaignTest -->
+      </class> <!-- com.crm.campaignTest.CampTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

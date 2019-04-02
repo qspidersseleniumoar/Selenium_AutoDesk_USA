@@ -1,5 +1,15 @@
 package com.crm.potest;
 
-public class CreatePOTest {
+import org.testng.annotations.Test;
+
+import com.crm.commonLib.BaseClass;
+
+public class CreatePOTest extends BaseClass{
+	
+	
+	@Test
+	public void createPOtest(){
+		
+	}
 
 }

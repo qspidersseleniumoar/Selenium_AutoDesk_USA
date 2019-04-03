@@ -12,7 +12,11 @@ import com.crm.objectRepository.PurchaseOrderInformationPage;
 import com.crm.objectRepository.PurchaseOrderPage;import com.sun.accessibility.internal.resources.accessibility;
 
 public class CreatePOTest extends BaseClass{
-	
+	/**
+	 *  @author PrathijnaRaoK
+	 *  Testcase to create purchase order with mandatoryfields
+	 * @throws Throwable
+	 */	
 	
 	@Test
 	public void createPurchaseOrdertest() throws Throwable{
@@ -38,9 +42,9 @@ public class CreatePOTest extends BaseClass{
 		System.out.println("actmsg---"+ actmsg);
 		System.out.println("expmsg---"+ expmsg);
 		
-		boolean status= actmsg.contains(expmsg);
-		//System.out.println(status);
-		//Assert.assertTrue(status);
+		boolean status=actmsg.contains(expmsg);
+		System.out.println(status);
+		Assert.assertTrue(status);
 		
 	}
 	

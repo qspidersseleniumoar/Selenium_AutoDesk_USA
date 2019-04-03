@@ -40,6 +40,67 @@ public class CreatePurchaseOrderPage{
 	@FindBy(xpath="//input[@value='  Save  ']")
 	private WebElement savePurchaseOrder;
 	
+	
+	public WebDriverCoominLib getLib() {
+		return lib;
+	}
+
+
+	public VendorLookUpPage getVlp() {
+		return vlp;
+	}
+
+
+	public ProductLookUpPage getPlp() {
+		return plp;
+	}
+
+
+	public WebElement getEnterSubject() {
+		return enterSubject;
+	}
+
+
+	public WebElement getSelectVendor() {
+		return selectVendor;
+	}
+
+
+	public WebElement getBillingAddress() {
+		return billingAddress;
+	}
+
+
+	public WebElement getCopyBillingAddress() {
+		return copyBillingAddress;
+	}
+
+
+	public WebElement getSelectProduct1() {
+		return selectProduct1;
+	}
+
+
+	public WebElement getSelectProduct2() {
+		return selectProduct2;
+	}
+
+
+	public WebElement getQuantity1() {
+		return quantity1;
+	}
+
+
+	public WebElement getListPrice1() {
+		return listPrice1;
+	}
+
+
+	public WebElement getSavePurchaseOrder() {
+		return savePurchaseOrder;
+	}
+
+
 	public void createPo(String sub,String billingadr,String qty,String price)
 	{
 		enterSubject.sendKeys(sub);

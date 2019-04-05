@@ -37,6 +37,5 @@ public void deletePurchaseOrderTest() throws Throwable{
 	testStart.log(LogStatus.INFO,"Verification for DeletePO");
 	poPage.deletebtnInSearchedPo();
 	extent.endTest(testStart);
-	
 }
 }

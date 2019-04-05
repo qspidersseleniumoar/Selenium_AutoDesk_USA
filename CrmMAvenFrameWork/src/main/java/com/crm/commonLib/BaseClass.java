@@ -25,7 +25,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 
 public class BaseClass {
-	FileLib eLib = new FileLib();
+	public static FileLib eLib = new FileLib();
 	public ExtentReports extent;
 	public ExtentTest logger;
 	public static WebDriver driver;

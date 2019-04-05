@@ -62,9 +62,7 @@ public class WebDriverCoominLib extends BaseClass{
 		act.moveToElement(wb).perform();
 	}
 	
-	public String getAlertTest(){
-		return driver.switchTo().alert().getText();
-	}
+
 	
 	public void waitAndClick(WebElement element) {
 		int count =0;

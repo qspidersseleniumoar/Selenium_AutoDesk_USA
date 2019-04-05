@@ -73,6 +73,7 @@ public class WebDriverCoominLib extends BaseClass{
 				try {
 					Thread.sleep(1000);
 					count++;
+					break;
 				} catch (InterruptedException e1) {
 					
 				}

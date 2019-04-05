@@ -1,12 +1,17 @@
 package com.crm.objectRepository;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
-
+/**
+ * 
+ * @author PrathijnaRaoK
+ *
+ */
 public class CreatePurchaseOrderPage{
 	
 	WebDriverCoominLib lib= new WebDriverCoominLib();
@@ -100,7 +105,14 @@ public class CreatePurchaseOrderPage{
 		return savePurchaseOrder;
 	}
 
-
+	
+/**
+ * Create the purchase order with mandatory fields
+ * @param sub
+ * @param billingadr
+ * @param qty
+ * @param price
+ */
 	public void createPo(String sub,String billingadr,String qty,String price)
 	{
 		enterSubject.sendKeys(sub);
@@ -120,6 +132,4 @@ public class CreatePurchaseOrderPage{
 		listPrice1.sendKeys(price);
 		savePurchaseOrder.click();
 	}
-	
-	
 }

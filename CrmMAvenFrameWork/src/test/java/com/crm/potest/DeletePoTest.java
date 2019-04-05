@@ -14,7 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
  * @author AMRUTHA
  *
  */
-public class DeletePoTest extends BaseClass {
+public class DeletePoTest extends BaseClass{
 	/**
 	 * @throws Throwable
 	 * 1.Navigate to PurchaseOrder

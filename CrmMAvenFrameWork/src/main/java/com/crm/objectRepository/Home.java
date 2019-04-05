@@ -7,10 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
 
-
-
- 
-
 public class Home extends WebDriverCoominLib{
 	@FindBy(xpath="//img[@src='themes/softed/images/Home.PNG']")
 	WebElement home;

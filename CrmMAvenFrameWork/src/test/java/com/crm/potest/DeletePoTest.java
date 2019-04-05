@@ -34,7 +34,7 @@ public void deletePurchaseOrderTest() throws Throwable{
 	PurchaseOrderPage poPage=PageFactory.initElements(driver, PurchaseOrderPage.class);
 	poPage.search_purchase_Order();
 	poPage.searchBtnClick();
-	testStart.log(LogStatus.INFO,"Verification for DeletePO");
+	testStart.log(LogStatus.PASS,"Verification for DeletePO");
 	poPage.deletebtnInSearchedPo();
 	extent.endTest(testStart);
 }

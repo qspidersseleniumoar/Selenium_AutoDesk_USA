@@ -11,6 +11,8 @@ import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.FileLib;
 import com.crm.objectRepository.CreatCustomer;
 import com.crm.objectRepository.Home;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * @author Anuj
@@ -29,9 +31,19 @@ public class CreatCustomerTest extends BaseClass{
 	 */
 @Test
 public void creatCustomer() throws Throwable{
-	//FileLib excel = new FileLib();
+	
+	ExtentTest testlog = extent.startTest("createNewUserTest");
+	testlog.log(LogStatus.INFO, "Login to app");
+	testlog.log(LogStatus.PASS, "Create Customer");
+	//testlog.log(LogStatus.FAIL, "Create Customer");
+	//testlog.log(LogStatus.WARNING, "Create Customer");
+	testlog.log(LogStatus.INFO, "Logout");
+	extent.endTest(testlog);
 	Random r = new Random();
 	int ranonNum = r.nextInt(10000);
+
+	//FileLib excel = new FileLib();
+	
 
 	String username="garima";//eLib.getExcelData("Sheet2", 0, 1);
 	String password="qwerty";//eLib.getExcelData("Sheet2", 1, 1);
@@ -40,12 +52,12 @@ public void creatCustomer() throws Throwable{
 	String lastname="bhardwaj";//eLib.getExcelData("Sheet2", 4, 1);
 	Home home = PageFactory.initElements(driver, Home.class);
 	home.CRM_Settings();
-	Reporter.log("========navigate to CRM Setting==========");
+	testlog.log(LogStatus.INFO,"========navigate to CRM Setting==========");
 	CreatCustomer cc=PageFactory.initElements(driver, CreatCustomer.class);
 	cc.navigateToUser();
-	Reporter.log("========navigate to User==========");
+	testlog.log(LogStatus.INFO,"========navigate to User==========");
 	cc.navigateToNewUser();
-	Reporter.log("========navigate to New User==========");
+	testlog.log(LogStatus.INFO,"========navigate to New User==========");
 	cc.editCustomerName(username);
 	cc.editPassword(password);
 	cc.editConfPassword(confpassword);
@@ -53,11 +65,11 @@ public void creatCustomer() throws Throwable{
 	cc.lastName(lastname);
 	cc.lookup();
     cc.getSaveBtn();
-    Reporter.log("========New User Created ==========");
+    testlog.log(LogStatus.INFO,"========New User Created ==========");
 	String actMsg= cc.getCptrmsg().getText();
 	String expMsg = "Showing Recor";
     boolean status=actMsg.contains(expMsg);
     Assert.assertTrue(status);
-    Reporter.log("=======Verify Msg ============");
+    testlog.log(LogStatus.PASS,"=======Verify Msg ============");
 }
 }

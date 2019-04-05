@@ -62,6 +62,8 @@ public class Home extends WebDriverCoominLib{
 	WebElement setting_img;
 	@FindBy(name="Purchase Order")
 	WebElement purchaseOrder;
+	@FindBy(name="Vendors")
+	WebElement vendor;
 
 	
 	public void navigateTohome(){
@@ -78,19 +80,21 @@ public class Home extends WebDriverCoominLib{
 
 	}
 	public void navigateToOrganizations(){ 
-		waitAndClick(Organizations);
+		Organizations.click();
 	}
 	public void navigateToContacts(){
 		waitAndClick(Contacts);
 
 	}
+	
 	public void navigateToOpportunities(){
 		waitAndClick(home);
 
 	}
 	public void navigateToProducts(){
+		//mouseMovement(More);
 		waitAndClick(Products);
-
+		
 	}
 	 
 	public void navigateToEmail(){
@@ -157,5 +161,21 @@ public class Home extends WebDriverCoominLib{
 			waitAndClick(purchaseOrder);
 
 	} 
+
+	public void navigateToVender(){
+
+		mouseMovement(More);
+		waitAndClick(vendor);
+
+	} 
+	
+
+	public void navigateToUserPage()
+	{
+		
+	}
+
+	public void navigateToPrice() {}
+	
 
 	 }

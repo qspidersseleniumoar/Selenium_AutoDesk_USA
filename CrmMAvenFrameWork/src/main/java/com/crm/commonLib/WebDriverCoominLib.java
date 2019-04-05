@@ -61,7 +61,9 @@ public class WebDriverCoominLib extends BaseClass{
 		Actions act = new Actions(driver);
 		act.moveToElement(wb).perform();
 	}
-	
+	public String getAlertTest(){
+		return driver.switchTo().alert().getText();
+	}
 
 	
 	public void waitAndClick(WebElement element) {

@@ -15,9 +15,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class FileLib {
-	
-	
-	
 	String filePath = "./src/test/resources/testData.xlsx";
 	String propertyPath = "./src/test/resources/commonData.properties";
 	

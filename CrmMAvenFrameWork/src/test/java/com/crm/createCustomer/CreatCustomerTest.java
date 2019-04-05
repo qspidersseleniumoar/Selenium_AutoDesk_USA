@@ -1,7 +1,10 @@
 package com.crm.createCustomer;
 
+import java.util.Random;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.crm.commonLib.BaseClass;
@@ -9,20 +12,40 @@ import com.crm.commonLib.FileLib;
 import com.crm.objectRepository.CreatCustomer;
 import com.crm.objectRepository.Home;
 
+/**
+ * @author Anuj
+ * 
+ */
 public class CreatCustomerTest extends BaseClass{
+	/**
+	 * 
+	 * @throws CreateCustomerTest
+	 * 1. navigate to Setting Icon
+	 * 2. click on Crm Settings
+	 * 3. Click on USER module
+	 * 4. Click on NewUser
+	 * 5. Create New User with Mandatory credentials
+	 * 6. Click on Save
+	 */
 @Test
 public void creatCustomer() throws Throwable{
-	FileLib excel = new FileLib();
-	String username=excel.getExcelData("Sheet2", 0, 1);
-	String password= excel.getExcelData("Sheet2", 1, 1);
-	String confpassword= excel.getExcelData("Sheet2", 2, 1);
-	String email= excel.getExcelData("Sheet2", 3, 1);
-	String lastname= excel.getExcelData("Sheet2", 4, 1);
+	//FileLib excel = new FileLib();
+	Random r = new Random();
+	int ranonNum = r.nextInt(10000);
+
+	String username="garima";//eLib.getExcelData("Sheet2", 0, 1);
+	String password="qwerty";//eLib.getExcelData("Sheet2", 1, 1);
+	String confpassword="qwerty";//eLib.getExcelData("Sheet2", 2, 1);
+	String email="abc@gmail.com";//eLib.getExcelData("Sheet2", 3, 1);
+	String lastname="bhardwaj";//eLib.getExcelData("Sheet2", 4, 1);
 	Home home = PageFactory.initElements(driver, Home.class);
 	home.CRM_Settings();
+	Reporter.log("========navigate to CRM Setting==========");
 	CreatCustomer cc=PageFactory.initElements(driver, CreatCustomer.class);
 	cc.navigateToUser();
+	Reporter.log("========navigate to User==========");
 	cc.navigateToNewUser();
+	Reporter.log("========navigate to New User==========");
 	cc.editCustomerName(username);
 	cc.editPassword(password);
 	cc.editConfPassword(confpassword);
@@ -30,10 +53,11 @@ public void creatCustomer() throws Throwable{
 	cc.lastName(lastname);
 	cc.lookup();
     cc.getSaveBtn();
+    Reporter.log("========New User Created ==========");
 	String actMsg= cc.getCptrmsg().getText();
 	String expMsg = "Showing Recor";
     boolean status=actMsg.contains(expMsg);
     Assert.assertTrue(status);
-   System.out.println("=======Verify Msg ============");
+    Reporter.log("=======Verify Msg ============");
 }
 }

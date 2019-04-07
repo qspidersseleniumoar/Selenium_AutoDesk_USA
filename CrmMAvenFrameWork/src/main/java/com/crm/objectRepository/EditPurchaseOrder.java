@@ -6,12 +6,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
-
+/**
+ * 
+ * @author Risha
+ *
+ */
 public class EditPurchaseOrder {
 	
 	WebDriverCoominLib lib= new WebDriverCoominLib();
 	CreatePurchaseOrderPage cpo  = PageFactory.initElements(BaseClass.driver, CreatePurchaseOrderPage.class);	
-	@FindBy(name = "Edit")
+	
+	@FindBy(xpath = "//table[@class='lvt small']/tbody/tr[3]/td[*]/a[text()='edit']")
 	private WebElement editBtn;
 	
 	@FindBy(xpath = "//select[@name='postatus']")
@@ -20,6 +25,7 @@ public class EditPurchaseOrder {
 	public WebElement getEditBtn() {
 		return editBtn;
 	}
+	
 	public WebElement getEditStatus() {
 		return editStatus;
 	}	
@@ -27,11 +33,13 @@ public class EditPurchaseOrder {
 	public void editSubject()
 	{
 		editBtn.click();
-	}	
+	}
+	
 	public void clearSubject()
 	{
 		cpo.getEnterSubject().clear();
 	}
+	
 	public void editNewSubject(String newSubjectName)
 	{
 		cpo.getEnterSubject().sendKeys(newSubjectName);
@@ -43,8 +51,7 @@ public class EditPurchaseOrder {
 	}
 	public void savePurchaseOrderWithNewSubject()
 	{
-		cpo.getSavePurchaseOrder().click();
-		
+		cpo.getSavePurchaseOrder().click();		
 	}
 }
 

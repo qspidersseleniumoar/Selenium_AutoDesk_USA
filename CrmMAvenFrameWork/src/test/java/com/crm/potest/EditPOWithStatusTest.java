@@ -1,7 +1,5 @@
 package com.crm.potest;
 
-import java.util.Random;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -33,29 +31,12 @@ public class EditPOWithStatusTest extends BaseClass{
 		@Test
 		public void editPurchaseOrderStatusTest() throws Throwable
 		{
-			ExtentTest testLog = extent.startTest("editPurchaseOrderStatusTest");
-			Random r = new Random();
-			int randomNum = r.nextInt(10000);
-			FileLib elib  = new FileLib();
-			String sub=elib.getExcelData("EditPO",7,2);
-			String vendor=elib.getExcelData("EditPO",2,2);
-			String billingAddress=elib.getExcelData("EditPO",3,2);
-			String shippingAddress=elib.getExcelData("EditPO",4,2);
-			String qty=elib.getExcelData("EditPO",5,2);
-			String price=elib.getExcelData("EditPO",6,2);		
+			ExtentTest testLog = extent.startTest("editPurchaseOrderStatusTest");	
 			
 			testLog.log(LogStatus.INFO, "Navigate to Purchase Order");
 			Home hp=PageFactory.initElements(driver, Home.class);
 			hp.navigateToMore();
 			hp.navigateToPurchaseOrder();
-					
-			testLog.log(LogStatus.INFO, "Navigate to Purchase Order Page");
-			PurchaseOrderPage pop=PageFactory.initElements(driver, PurchaseOrderPage.class);
-			pop.navigateToCreatePo();
-				
-			testLog.log(LogStatus.INFO, "Navigate to Create Purchase Order");
-			CreatePurchaseOrderPage cpop=PageFactory.initElements(driver, CreatePurchaseOrderPage.class);
-			cpop.createPo(sub+" "+randomNum, billingAddress, qty, price);
 			
 			testLog.log(LogStatus.PASS, "Change Status of Purchase Order");
 			EditPurchaseOrder epo = PageFactory.initElements(BaseClass.driver, EditPurchaseOrder.class);
@@ -67,9 +48,8 @@ public class EditPOWithStatusTest extends BaseClass{
 			boolean status = actSubjName.contains("Approved");
 			Assert.assertEquals(status, true);		
 			epo.savePurchaseOrderWithNewSubject();
+			
 			extent.endTest(testLog);
 		}
 	}
-
-
 

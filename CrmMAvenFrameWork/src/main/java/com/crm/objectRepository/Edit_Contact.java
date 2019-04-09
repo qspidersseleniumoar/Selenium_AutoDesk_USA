@@ -28,13 +28,13 @@
 		@FindBy(xpath="//input[@name='submit']")
 		private WebElement searchbtn;
 		
-/*	@FindBy(xpath="//td[contains(text(),'1 - 1 of 1')]")
+		@FindBy(xpath="//td[contains(text(),'1 - 1 of 1')]")
 		WebElement ExpRes;
 		
 		public WebElement getExpRes() {
 			return ExpRes;
 		}
-*/
+
 
 		
 		public void srchbtn()

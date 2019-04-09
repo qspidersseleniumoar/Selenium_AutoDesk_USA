@@ -33,8 +33,8 @@ import com.relevantcodes.extentreports.LogStatus;
 			ExtentTest testlog =extent.startTest("EditContact");
 			testlog.log(LogStatus.INFO,"Loginto Success");
 			
-		/*	FileLib excel = new FileLib();
-			String editlast = excel.getExcelData("EditCont", 1, 0);*/
+			FileLib excel = new FileLib();
+			String editlast = excel.getExcelData("EditCont", 1, 0);
 			
 			/*Navigate to contact*/
 			

@@ -26,5 +26,9 @@ public class Vendor {
 		vendorName.sendKeys(vendor);
 		saveBtn.click();
 	}
+	public void deletevendor(String vendor)
+	{
+		
+	}
 	
 }

@@ -83,6 +83,11 @@ public class CreateNewOrganization extends BaseClass{
               website.sendKeys(web);
               radio.click();
               save.click();
+		}
+
+		public void saveclk() {
+			// TODO Auto-generated method stub
+			
 		}}
 		
 		

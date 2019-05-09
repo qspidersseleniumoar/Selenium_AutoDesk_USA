@@ -5,6 +5,11 @@ import org.openqa.selenium.support.FindBy;
 
 
 import com.crm.commonLib.WebDriverCoominLib;
+/**
+ * 
+ * @author safwana
+ *
+ */
 
 public class QuotesEdit {
 	@FindBy(id="column1")

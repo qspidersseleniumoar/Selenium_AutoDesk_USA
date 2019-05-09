@@ -12,9 +12,9 @@ import com.crm.commonLib.BaseClass;
 import com.crm.objectRepository.Home;
 import com.crm.objectRepository.ProductCreateNew;
 
-public class ProductTest {
+public class ProductTest extends BaseClass {
 	
-	public class CreateProjectTest extends BaseClass {
+
 		@Test
 		public void createProductAndVerify() throws Throwable {
 			String prodName = eLib.getExcelData("Sneha", 0, 1);
@@ -39,4 +39,4 @@ public class ProductTest {
 		}
 
 }
-}
+

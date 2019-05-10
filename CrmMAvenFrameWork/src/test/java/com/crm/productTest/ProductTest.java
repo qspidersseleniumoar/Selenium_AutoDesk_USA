@@ -1,4 +1,4 @@
-package com.crm.producttest;
+package com.crm.productTest;
 /**
  * 
  * @author Sneha, praveen

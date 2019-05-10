@@ -13,7 +13,7 @@ import org.testng.internal.thread.ThreadExecutionException;
 
 import bsh.commands.dir;
 
-public class WebDriverCoominLib extends BaseClass{
+public class WebDriverCoominLib {
 	public static String parentId;
 	public static String childId;
 	
@@ -38,31 +38,31 @@ public class WebDriverCoominLib extends BaseClass{
 	
 
 	public void getAllWindowIds() {
-		Set<String> set = driver.getWindowHandles();
+		Set<String> set = BaseClass.driver.getWindowHandles();
 		Iterator<String> it = set.iterator();
 		parentId = it.next();
 		childId = it.next();
 	}
 	
 	public void switchToParent() {
-		driver.switchTo().window(parentId);
+		BaseClass.driver.switchTo().window(parentId);
 	}
 	
 	public void switchToChild() {
-		driver.switchTo().window(childId);
+		BaseClass.driver.switchTo().window(childId);
 
 	}
 	
 	public void switchToAlert() {
-		driver.switchTo().alert().accept();
+		BaseClass.driver.switchTo().alert().accept();
 	}
 	
 	public void mouseMovement(WebElement wb) {
-		Actions act = new Actions(driver);
+		Actions act = new Actions(BaseClass.driver);
 		act.moveToElement(wb).perform();
 	}
 	public String getAlertTest(){
-		return driver.switchTo().alert().getText();
+		return BaseClass.driver.switchTo().alert().getText();
 	}
 
 	

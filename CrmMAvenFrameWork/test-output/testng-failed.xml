@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.campaignTest.CampTest">
+      <class name="com.crm.admintest.AdminTest">
         <methods>
           <include name="configbeforeSuite"/>
-          <include name="createcampTest"/>
+          <include name="configAm"/>
+          <include name="configBM"/>
+          <include name="edit_OrgAndCont_CustomPrivilegeRule"/>
+          <include name="afterClass"/>
           <include name="configBc"/>
+          <include name="configafterSuite"/>
         </methods>
-      </class> <!-- com.crm.campaignTest.CampTest -->
+      </class> <!-- com.crm.admintest.AdminTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

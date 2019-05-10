@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51246" started-at="2019-04-02T06:43:55Z" finished-at="2019-04-02T06:44:47Z">
+  <suite name="Default suite" duration-ms="23255" started-at="2019-05-10T06:57:12Z" finished-at="2019-05-10T06:57:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51246" started-at="2019-04-02T06:43:55Z" finished-at="2019-04-02T06:44:47Z">
-      <class name="com.crm.campaignTest.CampTest">
-        <test-method status="PASS" signature="configbeforeSuite()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="configbeforeSuite" is-config="true" duration-ms="219" started-at="2019-04-02T12:13:55Z" finished-at="2019-04-02T12:13:55Z">
+    <test name="Default test" duration-ms="23255" started-at="2019-05-10T06:57:12Z" finished-at="2019-05-10T06:57:36Z">
+      <class name="com.crm.admintest.AdminTest">
+        <test-method status="PASS" signature="configbeforeSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configbeforeSuite" is-config="true" duration-ms="188" started-at="2019-05-10T12:27:12Z" finished-at="2019-05-10T12:27:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configbeforeSuite -->
-        <test-method status="PASS" signature="configBc()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="configBc" is-config="true" duration-ms="11215" started-at="2019-04-02T12:13:55Z" finished-at="2019-04-02T12:14:07Z">
+        <test-method status="PASS" signature="configBc()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBc" is-config="true" duration-ms="7068" started-at="2019-05-10T12:27:12Z" finished-at="2019-05-10T12:27:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="configBM" is-config="true" duration-ms="4000" started-at="2019-04-02T12:14:07Z" finished-at="2019-04-02T12:14:11Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBM" is-config="true" duration-ms="2676" started-at="2019-05-10T12:27:19Z" finished-at="2019-05-10T12:27:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createcampTest()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="createcampTest" duration-ms="27391" started-at="2019-04-02T12:14:11Z" finished-at="2019-04-02T12:14:38Z">
+        <test-method status="PASS" signature="edit_OrgAndCont_CustomPrivilegeRule()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="edit_OrgAndCont_CustomPrivilegeRule" duration-ms="7696" started-at="2019-05-10T12:27:22Z" finished-at="2019-05-10T12:27:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createcampTest -->
-        <test-method status="PASS" signature="configAm()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="configAm" is-config="true" duration-ms="8522" started-at="2019-04-02T12:14:38Z" finished-at="2019-04-02T12:14:46Z">
+        </test-method> <!-- edit_OrgAndCont_CustomPrivilegeRule -->
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configAm" is-config="true" duration-ms="3934" started-at="2019-05-10T12:27:30Z" finished-at="2019-05-10T12:27:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAm -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="afterClass" is-config="true" duration-ms="103" started-at="2019-04-02T12:14:46Z" finished-at="2019-04-02T12:14:47Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="afterClass" is-config="true" duration-ms="1873" started-at="2019-05-10T12:27:34Z" finished-at="2019-05-10T12:27:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="configafterSuite()[pri:0, instance:com.crm.campaignTest.CampTest@735f7ae5]" name="configafterSuite" is-config="true" duration-ms="779" started-at="2019-04-02T12:14:47Z" finished-at="2019-04-02T12:14:47Z">
+        <test-method status="PASS" signature="configafterSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configafterSuite" is-config="true" duration-ms="391" started-at="2019-05-10T12:27:36Z" finished-at="2019-05-10T12:27:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configafterSuite -->
-      </class> <!-- com.crm.campaignTest.CampTest -->
+      </class> <!-- com.crm.admintest.AdminTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -18,6 +18,8 @@ public class ProductCreateNew extends BaseClass {
 	@FindBy(id = "jscal_field_sales_start_date")
 	private WebElement saleStartEdit;
 
+	
+	
 	@FindBy(name = "productcategory")
 	private WebElement catagorySelct;
 

@@ -14,6 +14,7 @@ import com.crm.objectRepository.Home;
  * @author Tarannum
  *
  */
+
 public class AdminTest extends BaseClass {
 	@Test
 	public void edit_OrgAndCont_CustomPrivilegeRule() throws Throwable {

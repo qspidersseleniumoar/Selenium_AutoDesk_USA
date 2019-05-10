@@ -14,9 +14,15 @@ public class CreateQuote extends BaseClass{
 	CreateNewOrganization createOrg=PageFactory.initElements(driver, CreateNewOrganization.class);
 	ProductCreateNew selectProduct=PageFactory.initElements(driver, ProductCreateNew.class);
 	
+	@FindBy(name="viewName")
+	private WebElement nameTxtBox;	
+	
 	@FindBy(xpath="//img[@alt='Create Quote...']")
 	private WebElement createQouteBtn;
 	
+	@FindBy(linkText="Create Filter")
+	WebElement createFilter;	
+
 	@FindBy(name="subject")
 	private WebElement subjectEdt;
 	
@@ -44,9 +50,27 @@ public class CreateQuote extends BaseClass{
 	@FindBy(id="listPrice1")
 	private WebElement listPriceEdt;
 	
+	@FindBy(name="column2")
+	WebElement column2;	
+	
 	@FindBy(xpath="//input[@class='crmbutton small save']")
 	private WebElement saveBtn;
+	
+	@FindBy(id="viewname")
+	WebElement filterDropdown;
+	
+	public WebElement getFilterDropdown() {
+		return filterDropdown;
+	}
 
+	public WebElement getNameTxtBox() {
+		return nameTxtBox;
+	}
+
+	public WebElement getCreateFilter() {
+		return createFilter;
+	}
+	
 	public WebElement getSubjectEdt() {
 		return subjectEdt;
 	}
@@ -71,6 +95,14 @@ public class CreateQuote extends BaseClass{
 		return listPriceEdt;
 	}
 	
+	public WebElement getColumn2() {
+		return column2;
+	}
+
+	public void setColumn2(WebElement column2) {
+		this.column2 = column2;
+	}
+	
 	public void createQuotation(String subject, String billingAddress, String shippingAddress, String quantity, String listPrice) throws Throwable
 	{
 		createQouteBtn.click();
@@ -91,7 +123,14 @@ public class CreateQuote extends BaseClass{
 		listPriceEdt.sendKeys(listPrice);
 		saveBtn.click();
 	}
+	public void createFilter(String name) {
+		createFilter.click();
+		nameTxtBox.sendKeys(name);		
+	}
 
+	public WebElement getSaveBtn() {
+		return saveBtn;
+	}
 	
 	
 }

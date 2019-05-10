@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23255" started-at="2019-05-10T06:57:12Z" finished-at="2019-05-10T06:57:36Z">
+  <suite name="Default suite" duration-ms="25422" started-at="2019-05-10T07:17:13Z" finished-at="2019-05-10T07:17:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23255" started-at="2019-05-10T06:57:12Z" finished-at="2019-05-10T06:57:36Z">
+    <test name="Default test" duration-ms="25422" started-at="2019-05-10T07:17:13Z" finished-at="2019-05-10T07:17:38Z">
       <class name="com.crm.admintest.AdminTest">
-        <test-method status="PASS" signature="configbeforeSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configbeforeSuite" is-config="true" duration-ms="188" started-at="2019-05-10T12:27:12Z" finished-at="2019-05-10T12:27:12Z">
+        <test-method status="PASS" signature="configbeforeSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configbeforeSuite" is-config="true" duration-ms="188" started-at="2019-05-10T12:47:13Z" finished-at="2019-05-10T12:47:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configbeforeSuite -->
-        <test-method status="PASS" signature="configBc()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBc" is-config="true" duration-ms="7068" started-at="2019-05-10T12:27:12Z" finished-at="2019-05-10T12:27:19Z">
+        <test-method status="PASS" signature="configBc()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBc" is-config="true" duration-ms="7029" started-at="2019-05-10T12:47:13Z" finished-at="2019-05-10T12:47:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBM" is-config="true" duration-ms="2676" started-at="2019-05-10T12:27:19Z" finished-at="2019-05-10T12:27:22Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configBM" is-config="true" duration-ms="3019" started-at="2019-05-10T12:47:20Z" finished-at="2019-05-10T12:47:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="edit_OrgAndCont_CustomPrivilegeRule()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="edit_OrgAndCont_CustomPrivilegeRule" duration-ms="7696" started-at="2019-05-10T12:27:22Z" finished-at="2019-05-10T12:27:30Z">
+        <test-method status="PASS" signature="edit_OrgAndCont_CustomPrivilegeRule()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="edit_OrgAndCont_CustomPrivilegeRule" duration-ms="9459" started-at="2019-05-10T12:47:23Z" finished-at="2019-05-10T12:47:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- edit_OrgAndCont_CustomPrivilegeRule -->
-        <test-method status="PASS" signature="configAm()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configAm" is-config="true" duration-ms="3934" started-at="2019-05-10T12:27:30Z" finished-at="2019-05-10T12:27:34Z">
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configAm" is-config="true" duration-ms="4187" started-at="2019-05-10T12:47:32Z" finished-at="2019-05-10T12:47:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAm -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="afterClass" is-config="true" duration-ms="1873" started-at="2019-05-10T12:27:34Z" finished-at="2019-05-10T12:27:36Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="afterClass" is-config="true" duration-ms="1709" started-at="2019-05-10T12:47:37Z" finished-at="2019-05-10T12:47:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="configafterSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configafterSuite" is-config="true" duration-ms="391" started-at="2019-05-10T12:27:36Z" finished-at="2019-05-10T12:27:36Z">
+        <test-method status="PASS" signature="configafterSuite()[pri:0, instance:com.crm.admintest.AdminTest@475530b9]" name="configafterSuite" is-config="true" duration-ms="391" started-at="2019-05-10T12:47:38Z" finished-at="2019-05-10T12:47:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configafterSuite -->

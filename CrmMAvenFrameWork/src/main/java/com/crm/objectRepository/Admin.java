@@ -12,6 +12,10 @@ import com.crm.commonLib.WebDriverCoominLib;
  */
 public class Admin {
 
+	public WebElement getSharingAndAccessLnk() {
+		return SharingAndAccessLnk;
+	}
+
 	@FindBy(xpath = "//a[contains(text(),'Sharing Access')]")
 	WebElement SharingAndAccessLnk;
 

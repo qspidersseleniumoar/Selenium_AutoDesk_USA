@@ -23,20 +23,14 @@ public class OrgnisationTest extends BaseClass {
 		CreateNewOrganization co = PageFactory.initElements(driver, CreateNewOrganization.class);
 		hm.navigateToOrganizations();
 		co.getCreateOrg().click();
-		Thread.sleep(2000);
 		co.createOrganization(orgName, orgWeb);
-		Thread.sleep(2000);
-		//co.saveclk();
-		/* verify org created or not*/
+		/* verify org created or not */
 		String expectd = "Organization";
 		String actual = co.getExpRes().getText();
-		System.out.println(actual);
 		boolean status1 = actual.contains(expectd);
 		Assert.assertTrue(status1);
 		/* Delete org */
-		Thread.sleep(2000);
 		hm.navigateToOrganizations();
-		Thread.sleep(2000);
 		co.getChkBox().click();
 		co.getDelettab().click();
 		/* verify all org got deleted or not */

@@ -1,10 +1,8 @@
 package com.crm.objectRepository;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
 
 public class Home extends WebDriverCoominLib{
@@ -44,6 +42,13 @@ public class Home extends WebDriverCoominLib{
 	WebElement Quotes;
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	WebElement admin;
+	/* ---------------------*/
+	@FindBy(linkText = "CRM Settings")
+	WebElement crmSettingLnk;
+
+	@FindBy(xpath = "//img[contains(@src,'mainSettings.PNG')]")
+	WebElement settingImg;
+	/*----------------------*/
 	@FindBy(linkText="Sign Out")
 	WebElement Sign_Out;
 	@FindBy(xpath="//img[@src='themes/softed/images/info.PNG']")
@@ -173,5 +178,12 @@ public class Home extends WebDriverCoominLib{
 
 	public void navigateToPrice() {}
 	
+	public void MoveToSettingImg(WebDriverCoominLib wlib) throws Throwable {
+		wlib.mouseMovement(settingImg );
+		
+	}
+	public void clickOnSettingImg(WebDriverCoominLib wlib) throws Throwable {
+		crmSettingLnk.click();
 
+	}
 	 }

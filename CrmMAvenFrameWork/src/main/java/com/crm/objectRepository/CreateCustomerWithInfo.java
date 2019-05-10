@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
 /**
  * @author Anuj
@@ -77,17 +78,17 @@ public class CreateCustomerWithInfo extends WebDriverCoominLib {
 		}
 		public void  lookup() {
 			lookUpEdt.click();
-			Set<String> set = driver.getWindowHandles();
+			Set<String> set = BaseClass.driver.getWindowHandles();
 			/*  Capture the SessionID from the Set Collection  */
 			Iterator<String> itr = set.iterator();
 			String parentSessionID = itr.next();
 			String childSessionID = itr.next();
 			/* Pass a Driver control to child sessionID  */
-			driver.switchTo().window(childSessionID);
+			BaseClass.driver.switchTo().window(childSessionID);
 			//LookUp lu= PageFactory.initElements(driver, LookUp.class);
 	                 //lu.getLookupRtrn().click();
 			lookupRtrn.click();
-	        driver.switchTo().window(parentSessionID);
+			BaseClass.driver.switchTo().window(parentSessionID);
 		}
 		public void  titleEdt(String title) {
 			titleEdt.sendKeys(title);
@@ -113,17 +114,17 @@ public class CreateCustomerWithInfo extends WebDriverCoominLib {
 
 		public void changeBtn() {
 			changeBtn.click();
-			Set<String> set = driver.getWindowHandles();
+			Set<String> set = BaseClass.driver.getWindowHandles();
 			/*  Capture the SessionID from the Set Collection  */
 			Iterator<String> itr = set.iterator();
 			String parentSessionID = itr.next();
 			String childSessionID = itr.next();
 			/* Pass a Driver control to child sessionID  */
-			driver.switchTo().window(childSessionID);
+			BaseClass.driver.switchTo().window(childSessionID);
 			//ChangeBtn cb= PageFactory.initElements(driver, ChangeBtn.class);
 	                 //cb.getReportTo().click();
 			reportTo.click();
-	        driver.switchTo().window(parentSessionID);
+			BaseClass.driver.switchTo().window(parentSessionID);
 		}
 		public WebElement getSaveBtn() {
 			return saveBtn;

@@ -17,6 +17,14 @@ public class CampaignInfo {
 	}
 	public WebElement getVerifyCampname() {
 		return campnameedit;
+	}
+	public WebElement getTargAudText() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public WebElement editBtn() {
+		// TODO Auto-generated method stub
+		return null;
 	}		
 	
 	 

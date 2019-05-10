@@ -8,7 +8,8 @@ import com.crm.commonLib.BaseClass;
 
 public class CreateNewOrganization extends BaseClass{
 	
-	  
+	  	@FindBy(xpath="//img[@title='Create Organization...']")
+	  	WebElement createOrg;
 	
 		@FindBy(xpath="//input[@class='detailedViewTextBox' and @name='accountname']")
 		WebElement orgname;
@@ -27,6 +28,31 @@ public class CreateNewOrganization extends BaseClass{
 		
 		@FindBy(xpath="//span[contains(text(),'Information')]")
 		WebElement expRes;
+		
+		@FindBy(xpath="//table/tbody/tr/td/input[@id='selectCurrentPageRec']")
+		WebElement chkBox;
+		
+		@FindBy(xpath="//table[@class='small']/tbody/tr/td/input[@value='Delete']")
+		WebElement delettab;
+		
+		@FindBy(xpath="//span[@class='genHeaderSmall']")
+		WebElement noOrgFnd;
+
+		public WebElement getNoOrgFnd() {
+			return noOrgFnd;
+		}
+
+		public WebElement getDelettab() {
+			return delettab;
+		}
+
+		public WebElement getChkBox() {
+			return chkBox;
+		}
+
+		public WebElement getCreateOrg() {
+			return createOrg;
+		}
 		
 		public WebElement getExpRes() {
 			return expRes;
@@ -76,17 +102,18 @@ public class CreateNewOrganization extends BaseClass{
 			this.save = save;
 		}
 
-		public void createOrganization(String Orgname,String web)
+		public void createOrganization(String Orgname,String web) throws Throwable
 		{
 			
               orgname.sendKeys(Orgname);		
               website.sendKeys(web);
               radio.click();
+              Thread.sleep(2000);
               save.click();
 		}
 
 		public void saveclk() {
-			// TODO Auto-generated method stub
+			save.click();
 			
 		}}
 		

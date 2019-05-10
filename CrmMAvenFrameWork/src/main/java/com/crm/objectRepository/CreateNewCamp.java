@@ -145,5 +145,12 @@ public class CreateNewCamp {
 	{
 		saveCamp.click();
 	}
+
+	public void targetAudTest(String excelData) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 	
 }

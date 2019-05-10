@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.crm.commonLib.BaseClass;
 import com.crm.commonLib.WebDriverCoominLib;
 
 public class CreatCustomer extends WebDriverCoominLib {
@@ -59,17 +60,17 @@ public class CreatCustomer extends WebDriverCoominLib {
 	}
 	public void  lookup() {
 		lookUpEdt.click();
-		Set<String> set = driver.getWindowHandles();
+		Set<String> set = BaseClass.driver.getWindowHandles();
 		/*  Capture the SessionID from the Set Collection  */
 		Iterator<String> itr = set.iterator();
 		String parentSessionID = itr.next();
 		String childSessionID = itr.next();
 		/* Pass a Driver control to child sessionID  */
-		driver.switchTo().window(childSessionID);
+		BaseClass.driver.switchTo().window(childSessionID);
 		//LookUp lu= PageFactory.initElements(driver, LookUp.class);
 		lookupRtrn.click();
 		//getLookUpEdt().click();
-        driver.switchTo().window(parentSessionID);
+		BaseClass.driver.switchTo().window(parentSessionID);
 	}
 	public void getSaveBtn() {
 		waitAndClick(saveBtn);

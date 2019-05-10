@@ -27,7 +27,7 @@ public class OrgnisationTest extends BaseClass {
 		co.createOrganization(orgName, orgWeb);
 		Thread.sleep(2000);
 		//co.saveclk();
-		/* verify org created or not */
+		/* verify org created or not*/
 		String expectd = "Organization";
 		String actual = co.getExpRes().getText();
 		System.out.println(actual);

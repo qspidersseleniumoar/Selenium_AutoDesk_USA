@@ -138,9 +138,8 @@ public class Home extends WebDriverCoominLib {
 	}
 
 	public void navigateToQuotes() {
+		mouseMovement(More);
 		waitAndClick(Quotes);
-
-		Quotes.click();
 	}
 
 	public void signOut() {
@@ -317,6 +316,12 @@ public class Home extends WebDriverCoominLib {
 
 	public void clickOnPlusBtn() {
 		waitAndClick(plusBtn);
+	}
+	
+	public void navigateToQuotesPage()
+	{
+		mouseMovement(moreHdrLnk);
+		waitAndClick(Quotes);
 	}
 
 }

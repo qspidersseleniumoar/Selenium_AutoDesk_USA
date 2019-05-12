@@ -71,4 +71,60 @@ public class CreateFilter extends BaseClass{
 		
 	}
 
+	public WebElement getCreatfillnk() {
+		return creatfillnk;
+	}
+
+	public WebElement getViewnamedt() {
+		return viewnamedt;
+	}
+
+	public WebElement getSelectclick1() {
+		return selectclick1;
+	}
+
+	public WebElement getSelectclick5() {
+		return selectclick5;
+	}
+
+	public WebElement getSelectclick2() {
+		return selectclick2;
+	}
+
+	public WebElement getSelectclick6() {
+		return selectclick6;
+	}
+
+	public WebElement getSelectclick3() {
+		return selectclick3;
+	}
+
+	public WebElement getSelectclick7() {
+		return selectclick7;
+	}
+
+	public WebElement getSelectclick4() {
+		return selectclick4;
+	}
+
+	public WebElement getSelectclick8() {
+		return selectclick8;
+	}
+
+	public WebElement getSelectclick9() {
+		return selectclick9;
+	}
+
+	public WebElement getSavebtn() {
+		return savebtn;
+	}
+
+	public WebElement getSetstatusaspublicClick() {
+		return setstatusaspublicClick;
+	}
+
+	public WebElement getViewnamecapt() {
+		return viewnamecapt;
+	}
+
 }

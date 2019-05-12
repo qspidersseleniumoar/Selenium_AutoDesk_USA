@@ -99,4 +99,30 @@ public class WebDriverCoominLib {
 		alt.dismiss();
 	}
 
+	public void selectAdvanced(WebElement wb, String option) {
+		Select sel = new Select(wb);
+
+		for (WebElement ele : sel.getOptions()) {
+			if (ele.getText().toLowerCase().contains(option.toLowerCase())) {
+				ele.click();
+				break;
+			}
+		}
+	}
+
+	public boolean checkForOptionPresence(WebElement wb, String option) {
+		boolean flag = false;
+		Select sel = new Select(wb);
+		for (WebElement ele : sel.getOptions()) {
+			if (ele.getText().toLowerCase().contains(option.toLowerCase())) {
+				flag = true;
+				break;
+			} else {
+				flag = false;
+			}
+		}
+		return flag;
+
+	}
+
 }
